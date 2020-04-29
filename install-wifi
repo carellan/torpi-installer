@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -e
 
-# install-wifi - 05/03/2020 - by MrEngman.
+# install-wifi - 26/04/2020 - by MrEngman.
 
 UPDATE_SELF=${UPDATE_SELF:-1}
 UPDATE_URI="http://downloads.fars-robotics.net/wifi-drivers/install-wifi"
@@ -186,7 +186,7 @@ Pi=""
 
         echo
         echo -n "Your Pi revision number is "
-        awk '/^Revision/ {sub("^1000", "", $3); print $3}' /proc/cpuinfo > Pirevno
+        awk '/^Revision/ {sub("^100", "", $3); print $3}' /proc/cpuinfo > Pirevno
 
 # check for Pi 0 or 1
 	if   cat Pirevno | grep -i '0010\|0013\|900032' ; then
