@@ -1,7 +1,5 @@
 apt-get install tor -y
 
-vi /etc/tor/torrc
-
 cat <<EOF >> /etc/tor/torrc
 Log notice file /var/log/tor/notices.log
 VirtualAddrNetwork 10.192.0.0/10
