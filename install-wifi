@@ -1,8 +1,4 @@
 #!/bin/bash
-#set -e
-
-# install-wifi - 26/04/2020 - by MrEngman.
-
 UPDATE_SELF=${UPDATE_SELF:-1}
 UPDATE_URI="http://downloads.fars-robotics.net/wifi-drivers/install-wifi"
 
